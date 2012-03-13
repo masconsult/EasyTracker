@@ -56,6 +56,10 @@ public class EasyTracker {
 
   public static final String LOG_TAG = "EZTracker";
 
+  public static final int VISITOR_SCOPE = 1;
+  public static final int SESSION_SCOPE = 2;
+  public static final int PAGE_SCOPE = 3;
+
   // EasyTracker is a singleton. Don't let other classes create one.
   private EasyTracker() {
   }
