@@ -32,9 +32,16 @@
             <artifactId>android</artifactId>
             <scope>provided</scope>
         </dependency>
+		<!-- Google Analytics -->
+        <dependency>
+			<groupId>com.google.android.apps</groupId>
+			<artifactId>analytics</artifactId>
+			<version>1.4.2</version>
+		</dependency>
     </dependencies>
 
     <build>
+        <sourceDirectory>src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
