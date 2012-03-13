@@ -409,6 +409,19 @@ public class EasyTracker {
     });
   }
 
+	public void setCustomVar(final int index, final String name,
+			final String value, final int scope) {
+		queueToTrackerThreadIfEnabled(new Runnable() {
+
+			@Override
+			public void run() {
+				getGoogleAnalyticsTracker().setCustomVar(index, name, value,
+						scope);
+			}
+
+		});
+	}
+	
   /**
    * Start a new session using the parameters stored in the EasyTracker Class.
    * This method flags GoogleAnalyticsTracker to start a new session with the
